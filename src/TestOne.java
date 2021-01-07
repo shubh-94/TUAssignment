@@ -27,8 +27,9 @@ public class TestOne {
 	   return (s*s == x);
 	}
 
-	private static boolean chechFib(int[] arr, int n) {
-	// TODO Auto-generated method stub
+	private static boolean chechFib(int[] arr, int n) 
+	{
+	
 	boolean flag=true;
 	for (int i : arr) {
 	   if(!isPerfectSquare(5*n*n + 4) ||
@@ -41,15 +42,11 @@ public class TestOne {
 	return flag;
 	}
 
-	public static int getGeo(int n,int arr[])
+	
+	public static void main(String[] args)
 	{
-
-	return arr[n]+arr[n-1];
-	}
-
-	public static void main(String[] args) {
-	int n=0;
-	Scanner s = new Scanner(System.in);
+			int n=0;
+			Scanner s = new Scanner(System.in);
 	        System.out.print("Enter no. of elements you want in array:");
 	        n = s.nextInt();
 	        int a[] = new int[n];
@@ -60,7 +57,7 @@ public class TestOne {
 	           
 	        }
 	       
-	        System.out.println("final:"+TestOne.getFib(n-1, a));
+	        System.out.println("Output:"+TestOne.getFib(n-1, a));
 	}
 }
 
